@@ -1,4 +1,5 @@
 /* How to get an array index with a value */
+/* --------------------------------------------------------------------------- */
 /* Reason: A way to convert your response to a numeric value */
 /* Question: Why not ask a person to respond in 1 or 0? 
 True, but it's more friendllier to ask a person "Yes" or "No" then 1 or 0 */
@@ -18,7 +19,7 @@ const answerPrompt = prompt('Your Answer: ')
 
 // If Else 
 /* answer 0 needs to be declared first outside of the block */
-/* TOTAL LINE: 7 */
+/* Total Line of Code: 7 */
 let answer0
 if (answerPrompt == "No") {
     answer0 = switchLabel.indexOf(switchLabel[0])
@@ -29,8 +30,8 @@ if (answerPrompt == "No") {
 }
 
 // Switch
-/* TOTAL LINE: 14 */
-/* in line 44, Wwy did I use...
+/* Total Line of Code: 14 */
+/* in line 45, Wwy did I use...
     case switchLabel['0']:
         versus
     case "No":
@@ -56,12 +57,12 @@ switch(answerPrompt) {
 
 
 // Ternary
-/* TOTAL LINE: 1 */
+/* Total Line of Code: 1 */
 const answer2 = answerPrompt === "No" ? switchLabel.indexOf(switchLabel[0]) : switchLabel.indexOf(switchLabel[1])
 
 
 // Regular Function
-/* TOTAL LINE: 5 */
+/* Total Line of Code: 5 */
 function getArrayIndex(propValue) {
     return switchLabel.indexOf(propValue)
 }
@@ -69,21 +70,32 @@ function getArrayIndex(propValue) {
 const answer3 = getArrayIndex(answerPrompt)
 
 
-
+// Render Result
 console.log (`Answer0 (If Else) 👉 Response: ${answerPrompt} Index: ${answer0}`)
 console.log (`Answer1 (Switch) 👉 Response: ${answerPrompt} Index: ${answer1}`)
 console.log (`Answer2 (Ternary) 👉 Response: ${answerPrompt} Index: ${answer2}`)
 console.log (`Answer3 (Regular Function) 👉 Response: ${answerPrompt} Index: ${answer3}`)
 
-/* My Fav is FUNCTION amongst all.
+
+
+/* My Fav is...
+ FUNCTION.
+ ---------------------------------------------------------------------------
 • Short line of code
 • Scalable (from 1 item to infininty)
 
+
 IF ELSE && SWITCH
+---------------------------------------------------------------------------
 • Muttable data using LET not CONST (for future discussion, don't be concerened with this now)
-• Scalable: if there are more value (or edits) in the array then statement needs to be edited to reflect the change.
+• Scalable: if there are more value (or edits) in the array 
+    then the statement needs to be edited to reflect the change.
+    Thus, opening potentiality of error
+
 
 TERNARY
-• One can go wild like... const Variable = Condition ? Statment1 : Statment 2: Statement 3 etc 
+---------------------------------------------------------------------------
+• One can go wild like... 
+const Variable = Condition ? Statment1 : Statment 2: Statement 3 etc 
 !!!Be that as it may!!! This is not widely shared opinon to chain using Ternary. 
     As the name implies 3. More than 3 better if/else of switch */
