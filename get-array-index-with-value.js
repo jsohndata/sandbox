@@ -3,9 +3,9 @@
 Reason: A way to convert a response to a numeric value
 
 Question: Why not ask a person to respond in 1 or 0? 
-Response: True one can do that. It's friendlier experience to ask 
-a person "Yes" or "No" rather 1 or 0. Additionally, intigers can be used to
-calculate with other math operators, where strings is a string.
+Response: True one can do that. It is a friendlier experience to ask 
+a person "Yes" or "No" rather 1 or 0. Additionally, intigers can be calculated
+using with other math operators, where strings is a string.
 */
 
 const prompt = require("prompt-sync")()
@@ -25,7 +25,7 @@ const answerPrompt = prompt('Your Answer: ')
 /* ---------------------------------------------------------------------------
 ====> Total Line of Code: 7
 
-Note: Variables needs to be declared first outside of the block 
+Note: Variable needs to be declared first outside of the block 
 */
 
 let answer0
@@ -41,7 +41,7 @@ if (answerPrompt == "No") {
 /* ---------------------------------------------------------------------------
 ====> Total Line of Code: 14
 
-Note: Variables needs to be declared first outside of the block 
+Note: Variable needs to be declared first outside of the block 
 
 Note: Line 64, Why use...
     case switchLabel['0']:
@@ -105,8 +105,8 @@ console.log (`Answer3 (Regular Function) 👉 Response: ${answerPrompt} Index: $
 /* My Fav is...
  FUNCTION.
  ---------------------------------------------------------------------------
-• Short line of code. Though not as as short as Ternary, yet see note below.
-• Scalability: Yes from 1 item to infininty.
+• Shorter lines of code. Though not as as short as Ternary, yet see note below.
+• Scalability: Yes, from 1 item to infininty.
 
 
 IF ELSE && SWITCH
