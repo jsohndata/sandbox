@@ -1,8 +1,12 @@
-/* How to get an array index with a value */
-/* --------------------------------------------------------------------------- */
-/* Reason: A way to convert your response to a numeric value */
-/* Question: Why not ask a person to respond in 1 or 0? 
-True, but it's more friendllier to ask a person "Yes" or "No" then 1 or 0 */
+/* How to get an array index with a value
+---------------------------------------------------------------------------
+Reason: A way to convert your response to a numeric value
+
+Question: Why not ask a person to respond in 1 or 0? 
+Response: True. From a user perspective it's friendllier to 
+ask a person "Yes" or "No" rather 1 or 0. Additionally, intigers can be used to
+calculate by applying other math operation, where strings is a string.
+*/
 
 const prompt = require("prompt-sync")()
 
@@ -18,8 +22,12 @@ const answerPrompt = prompt('Your Answer: ')
 
 
 // If Else 
-/* answer 0 needs to be declared first outside of the block */
-/* Total Line of Code: 7 */
+/* ---------------------------------------------------------------------------
+====> Total Line of Code: 7
+
+Note: Variables needs to be declared first outside of the block 
+*/
+
 let answer0
 if (answerPrompt == "No") {
     answer0 = switchLabel.indexOf(switchLabel[0])
@@ -30,15 +38,24 @@ if (answerPrompt == "No") {
 }
 
 // Switch
-/* Total Line of Code: 14 */
-/* in line 45, Wwy did I use...
+/* ---------------------------------------------------------------------------
+====> Total Line of Code: 14
+
+Note: Line 62, Why use...
     case switchLabel['0']:
         versus
     case "No":
 
-    Because later what if I want to change the value to "no", or "nah" or "no wai".
-    Then I will have to change the value of the array and in the switch--double work and potential for error. 
-    By using switchLabel['0'] I get to only change it in the array and the script will understand the change */
+    What if later someone decides to change the value to "nah" or "DoubleU T Effff No wai".
+    Then the developer will have to change the value of the array and in the switch as well,
+    creating double work and potential for error as multiple edits are made. 
+    
+    By using switchLabel['0'] the developer get to only change it in the array and the 
+    script will understand the change.
+    
+    This can be applied to If/Else as well
+    if (answerPrompt == switchLabel['0'])
+*/
 
 let answer1
 switch(answerPrompt) {
@@ -57,12 +74,16 @@ switch(answerPrompt) {
 
 
 // Ternary
-/* Total Line of Code: 1 */
+/* ---------------------------------------------------------------------------
+====> Total Line of Code: 1 */
+
 const answer2 = answerPrompt === "No" ? switchLabel.indexOf(switchLabel[0]) : switchLabel.indexOf(switchLabel[1])
 
 
 // Regular Function
-/* Total Line of Code: 5 */
+/* ---------------------------------------------------------------------------
+====> Total Line of Code: 5 */
+
 function getArrayIndex(propValue) {
     return switchLabel.indexOf(propValue)
 }
@@ -71,6 +92,7 @@ const answer3 = getArrayIndex(answerPrompt)
 
 
 // Render Result
+/* --------------------------------------------------------------------------- */
 console.log (`Answer0 (If Else) 👉 Response: ${answerPrompt} Index: ${answer0}`)
 console.log (`Answer1 (Switch) 👉 Response: ${answerPrompt} Index: ${answer1}`)
 console.log (`Answer2 (Ternary) 👉 Response: ${answerPrompt} Index: ${answer2}`)
