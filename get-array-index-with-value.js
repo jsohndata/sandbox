@@ -125,4 +125,5 @@ const Variable = Condition ? Statment1 : Statment 2: Statement 3 etc
 
 !!!🔥 Be that as it may 🔥!!! This is not widely shared opinon to chain using Ternary. 
     As the name implies 3, best to keep it just 2 statements. More than 3 better to 
-    use if/else, switch or function f*/
+    use if/else, switch or function
+*/
