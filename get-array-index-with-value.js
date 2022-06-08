@@ -1,6 +1,6 @@
 /* How to get an array index with a value
 ---------------------------------------------------------------------------
-Reason: A way to convert your response to a numeric value
+Reason: A way to convert a response to a numeric value
 
 Question: Why not ask a person to respond in 1 or 0? 
 Response: True. From a user perspective it's friendllier to 
