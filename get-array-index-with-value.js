@@ -41,7 +41,9 @@ if (answerPrompt == "No") {
 /* ---------------------------------------------------------------------------
 ====> Total Line of Code: 14
 
-Note: Line 62, Why use...
+Note: Variables needs to be declared first outside of the block 
+
+Note: Line 64, Why use...
     case switchLabel['0']:
         versus
     case "No":
@@ -103,21 +105,24 @@ console.log (`Answer3 (Regular Function) 👉 Response: ${answerPrompt} Index: $
 /* My Fav is...
  FUNCTION.
  ---------------------------------------------------------------------------
-• Short line of code
-• Scalable (from 1 item to infininty)
+• Short line of code. Though not as as short as Ternary, yet see note below.
+• Scalability: Yes from 1 item to infininty.
 
 
 IF ELSE && SWITCH
 ---------------------------------------------------------------------------
-• Muttable data using LET not CONST (for future discussion, don't be concerened with this now)
-• Scalable: if there are more value (or edits) in the array 
+• Mutable data using LET not CONST (for future discussion, don't be concerened with this now 🤯)
+• Scalability: if there are more value (or edits) in the array 
     then the statement needs to be edited to reflect the change.
-    Thus, opening potentiality of error
+    Thus, opening potentiality of error. Additionally, if there are 20 responses in total
+    this can easily get out of hand (and mind 🤯)
 
 
 TERNARY
 ---------------------------------------------------------------------------
 • One can go wild like... 
 const Variable = Condition ? Statment1 : Statment 2: Statement 3 etc 
-!!!Be that as it may!!! This is not widely shared opinon to chain using Ternary. 
-    As the name implies 3. More than 3 better if/else of switch */
+
+!!!🔥 Be that as it may 🔥!!! This is not widely shared opinon to chain using Ternary. 
+    As the name implies 3, best to keep it just 2 statements. More than 3 better to 
+    use if/else, switch or function f*/
