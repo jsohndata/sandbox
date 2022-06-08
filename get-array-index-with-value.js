@@ -1,4 +1,4 @@
-/* How to get an array index with a value
+/* Various method of getting an array index with a value
 ---------------------------------------------------------------------------
 Reason: A way to convert a response to a numeric value
 
