@@ -1,6 +1,7 @@
 /* How to get an array index with a value */
-
-
+/* Reason: A way to convert your response to a numeric value */
+/* Question: Why not ask a person to respond in 1 or 0? 
+True, but it's more friendllier to ask a person "Yes" or "No" then 1 or 0 */
 
 const prompt = require("prompt-sync")()
 
@@ -29,7 +30,7 @@ if (answerPrompt == "No") {
 
 // Switch
 /* TOTAL LINE: 14 */
-/* in line 43, Wwy did I use...
+/* in line 44, Wwy did I use...
     case switchLabel['0']:
         versus
     case "No":
@@ -68,8 +69,21 @@ function getArrayIndex(propValue) {
 const answer3 = getArrayIndex(answerPrompt)
 
 
-/* My Fav is Regular Function amongst all */
+
 console.log (`Answer0 (If Else) 👉 Response: ${answerPrompt} Index: ${answer0}`)
 console.log (`Answer1 (Switch) 👉 Response: ${answerPrompt} Index: ${answer1}`)
 console.log (`Answer2 (Ternary) 👉 Response: ${answerPrompt} Index: ${answer2}`)
 console.log (`Answer3 (Regular Function) 👉 Response: ${answerPrompt} Index: ${answer3}`)
+
+/* My Fav is FUNCTION amongst all.
+• Short line of code
+• Scalable (from 1 item to infininty)
+
+IF ELSE && SWITCH
+• Muttable data using LET not CONST (for future discussion, don't be concerened with this now)
+• Scalable: if there are more value (or edits) in the array then statement needs to be edited to reflect the change.
+
+TERNARY
+• One can go wild like... const Variable = Condition ? Statment1 : Statment 2: Statement 3 etc 
+!!!Be that as it may!!! This is not widely shared opinon to chain using Ternary. 
+    As the name implies 3. More than 3 better if/else of switch */
